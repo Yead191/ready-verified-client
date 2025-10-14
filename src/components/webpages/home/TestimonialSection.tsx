@@ -32,9 +32,7 @@ export default function TestimonialSection() {
       >
         {/* Section Header */}
 
-        <h1
-          className="text-[26px] md:text-[40px] font-[600] text-[#333] mb-6 leading-[1.3] "
-        >
+        <h1 className="text-[26px] md:text-[40px] font-[600] text-[#333] mb-6 leading-[1.3] ">
           What Do <span className="text-[#2FB236]">People Think About Us?</span>
         </h1>
 
