@@ -16,17 +16,16 @@ export default function JourneySection() {
       </div>
 
       <div className="mt-16 flex justify-center items-center gap-6">
-        <Link href={'/assessments'}>
-        
-        <Button
-          style={{
-            backgroundColor: "#1A5FA4",
-            color: "white",
-            height: 42,
-          }}
-        >
-          Browse Assessments
-        </Button>
+        <Link href={"/assessments"}>
+          <Button
+            style={{
+              backgroundColor: "#1A5FA4",
+              color: "white",
+              height: 42,
+            }}
+          >
+            Start your journey
+          </Button>
         </Link>
         <Button
           variant="outlined"

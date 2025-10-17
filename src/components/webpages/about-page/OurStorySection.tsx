@@ -36,30 +36,22 @@ export default function OurStorySection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 container mx-auto px-4 md:px-4 justify-center items-center ">
         {/* left side story */}
         <div className="mb-8">
-          <h1 className="text-[40px] font-semibold">
-            Our <span className="text-[#2FB236] mb-5">Story</span>
+          <h1 className="text-[40px] font-semibold mb-5">
+            Why
+            <span className="text-[#2FB236] "> Ready Verified</span> exists
           </h1>
           <p className="text-[#858585] text-[18px]">
-            Based in Dennis W., Ready Verified was founded in 2008 as one of the
-            first SaaS solutions to provide assessments to the market. We were
-            founded with the mission to take powerfully predictive science and
-            make it accessible to companies of all kinds, enabling them to make
-            better talent decisions that drive results.
+            Ready Verified started with a simple belief: people thrive where
+            their character fits the culture. After years of watching great
+            people bounce from the wrong roles and good teams struggle to hire
+            Dennis built Ready Verified to connect the right people to the right
+            places, faster.
             <br />
-            <br />
-            Since those early days, Ready Verified has grown rapidly. We have
-            been featured on the Inc. 6000 eight years in a row, we scaled our
-            team from just a few people to over 250, and we have received
-            recognition as a Best Place to Work by Inc. and Built In LA. We’ve
-            also expanded internationally, having acquired Revelian, an UK-based
-            leader in resume-based assessments, in 2010 and Alcami, one of the
-            world’s leading video interviewing providers, in 2025.
-            <br />
-            <br />
-            While a lot of growth means change, some things remain the same: our
-            customer-centric approach that informs everything we do, and our
-            employee-centric approach towards creating a positive environment
-            that enables our team to be the best we can be.
+            <br /> We spotlight behaviors (reliability, coachability,
+            initiative) and map them to real team needs. Ticker counts: Total
+            Products Total Active Users Total Certificates Earned (auto)
+            Mission: Connect character to culture so hires thrive and teams
+            grow. Vision/Tagline: Hire for character. Place for fit.
           </p>
         </div>
         {/* right side img */}

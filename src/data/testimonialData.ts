@@ -10,42 +10,42 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Olivia Bennett",
-    position: "App Developer",
-    company: "TechCorp",
+    name: "Jasmin",
+    position: "Trainee",
+    company: "Auto Tech",
     quote:
-      "The platform's assessments helped me identify my strengths and areas for improvement. The certifications I earned opened doors to new opportunities and significantly boosted my career prospects.",
+      "I got my first interview in a week the ReadyScore and interview prompts made it click.",
   },
   {
     id: "2",
     name: "Marcus Rodriguez",
-    position: "Marketing Manager",
-    company: "Digital Solutions",
+    position: "Manager",
+    company: "Ops",
     quote:
-      "I was impressed by the quality and relevance of the assessments. They perfectly aligned with industry standards and helped me validate my skills to potential employers.",
+      "The Culture Map helped me hire to reality, not a wish list.",
   },
   {
     id: "3",
-    name: "Sarah Chen",
-    position: "UX Designer",
-    company: "Creative Studio",
+    name: "Kim",
+    position: "Manager",
+    company: "Career Services",
     quote:
-      "The interactive assessments were engaging and comprehensive. I appreciated the detailed feedback and personalized recommendations that helped me focus on skill development.",
+      "Our grads place faster when employers see behaviors.",
   },
-  {
-    id: "4",
-    name: "David Thompson",
-    position: "Data Analyst",
-    company: "Analytics Pro",
-    quote:
-      "The certification process was thorough and professional. Having these credentials on my resume has definitely made me stand out in job applications and interviews.",
-  },
-  {
-    id: "5",
-    name: "Emily Johnson",
-    position: "Project Manager",
-    company: "Innovation Labs",
-    quote:
-      "The self-paced learning approach worked perfectly for my busy schedule. The assessments were challenging yet fair, and the results gave me confidence in my abilities.",
-  },
+  // {
+  //   id: "4",
+  //   name: "David Thompson",
+  //   position: "Data Analyst",
+  //   company: "Analytics Pro",
+  //   quote:
+  //     "The certification process was thorough and professional. Having these credentials on my resume has definitely made me stand out in job applications and interviews.",
+  // },
+  // {
+  //   id: "5",
+  //   name: "Emily Johnson",
+  //   position: "Project Manager",
+  //   company: "Innovation Labs",
+  //   quote:
+  //     "The self-paced learning approach worked perfectly for my busy schedule. The assessments were challenging yet fair, and the results gave me confidence in my abilities.",
+  // },
 ];

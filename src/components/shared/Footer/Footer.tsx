@@ -248,20 +248,7 @@ export default function Footer() {
           </Text>
           {/* Newsletter Subscription */}
           <div className="flex items-center gap-2 ">
-            <Input
-              placeholder="Your Email"
-              style={{
-                backgroundColor: "#1F2937",
-                borderColor: "#F1F1F1",
-                color: "white",
-              }}
-              styles={{
-                input: {
-                  backgroundColor: "#1F2937",
-                  color: "white",
-                },
-              }}
-            />
+            <Input placeholder="Your Email" className="whitePlaceholder !bg-[#122D42] !text-white" />
             <Button
               type="primary"
               onClick={handleSubscribe}
