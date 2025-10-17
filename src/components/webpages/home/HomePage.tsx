@@ -9,6 +9,8 @@ import HowItWorks from "./HowItWorksSection";
 import EmployerHome from "@/components/Employer-school-pages/EmployerHome";
 import getProfile from "@/utils/getProfile";
 import { myFetch } from "@/utils/myFetch";
+import JourneySection from "../about-page/JourneySection";
+import SupportStrip from "./SupportStrip";
 
 export default async function HomePage() {
   const user = (await getProfile()) || null;
@@ -22,8 +24,6 @@ export default async function HomePage() {
   });
   const { data: faq } = await myFetch("/faq");
 
-  // console.log("resume", resumes);
-  // console.log("cv", coverLetters);
   return (
     <>
       {user?.role === "EMPLOYEE" ? (
@@ -37,8 +37,10 @@ export default async function HomePage() {
           <HowItWorks />
           <CVTemplatesSection resumes={resumes} coverLetters={coverLetters} />
           <ResumeSection />
-          <FAQ faq={faq} />
           <TestimonialSection />
+          <JourneySection />
+          <FAQ faq={faq} />
+          <SupportStrip />
         </>
       )}
     </>

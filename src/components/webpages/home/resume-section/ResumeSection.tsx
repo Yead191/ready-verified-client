@@ -139,11 +139,11 @@ const ResumeSection = () => {
             className="text-3xl md:text-5xl "
             style={{ fontWeight: 500, lineHeight: "1.2" }}
           >
-            Get Better Solution For Your Resume!
+            Business cards that open doors!
           </h2>
           <p style={{ color: "#ABABAB", fontSize: "14px", marginTop: "10px" }}>
-            Stand out from the herd of job applicants with our
-            professionally-designed resume templates. Get noticed, get hired
+            Surprise employers with a custom card that highlights your character
+            traits, training, and a QR to your profile.
           </p>
           <Button
             type="primary"
@@ -156,7 +156,7 @@ const ResumeSection = () => {
               fontWeight: 600,
             }}
           >
-            ORDER BUSINESS CARDS
+            ORDER CARDS
           </Button>
         </div>
         {/* Video Area */}
@@ -166,6 +166,7 @@ const ResumeSection = () => {
             controls
             autoPlay
             muted
+            about="Watch how a simple card leads to a callback fast."
           >
             <source src="/video/resumeVideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.

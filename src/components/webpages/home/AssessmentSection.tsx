@@ -1,11 +1,11 @@
 "use client";
 
-import { Button, Typography, Row, Col } from "antd";
-import { ArrowRightOutlined } from "@ant-design/icons";
+import PrimaryButton from "@/components/shared/PrimaryButton";
+import SecondaryButton from "@/components/shared/SecondaryButton";
+import { Typography } from "antd";
 import Image from "next/image";
-import Link from "next/link";
 
-const { Title, Paragraph } = Typography;
+const { Paragraph } = Typography;
 
 export default function AssessmentSection() {
   const statistics = [
@@ -21,9 +21,9 @@ export default function AssessmentSection() {
         {/* Left Content */}
 
         <div className="w-full max-w-[600px]">
-          <h1 className="text-4xl md:text-5xl font-bold text-left mb-4 leading-16">
-            Have your Assessment done by{" "}
-            <span style={{ color: "#52c41a" }}>Professionals!</span>
+          <h1 className="text-4xl md:text-[40px] font-bold text-left mb-4 leading-10 md:leading-14">
+            See which product fits you and find the right{" "}
+            <span style={{ color: "#52c41a" }}>best </span>for you.
           </h1>
 
           <Paragraph
@@ -36,9 +36,8 @@ export default function AssessmentSection() {
               // maxWidth: "600px",
             }}
           >
-            Get your assessment expertly designed and certified by industry
-            professionals. Boost credibility, enhance evaluation, and stand out
-            with a trusted certification.
+            Start with a Character Profile, then choose resumes, cover letters,
+            guides, and badges that showcase who you are.
           </Paragraph>
 
           {/* Statistics Grid */}
@@ -77,26 +76,17 @@ export default function AssessmentSection() {
           </div>
 
           {/* CTA Button */}
-          <Link href={"/assessments"}>
-            <Button
-              type="primary"
-              size="large"
-              icon={<ArrowRightOutlined />}
-              iconPosition="end"
-              style={{
-                backgroundColor: "#1A5FA4",
-                borderColor: "#1A5FA4",
-                height: "48px",
-                paddingLeft: "24px",
-                paddingRight: "24px",
-                fontSize: "16px",
-                fontWeight: "500",
-                borderRadius: "6px",
-              }}
-            >
-              Assessments
-            </Button>
-          </Link>
+          <div className="flex flex-col md:flex-row gap-4">
+            <PrimaryButton
+              text="Explore Assessments"
+              href="/assessments"
+              arrow={true}
+            />
+            <SecondaryButton
+              text="Build your Character Profile"
+              href="/auth/role-selection"
+            />
+          </div>
         </div>
 
         {/* Right Content - Placeholder for your image */}

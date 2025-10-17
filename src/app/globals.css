@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #1a5fa4;
+  --secondary: #f8faff;
 }
 
 @theme inline {
@@ -11,7 +13,17 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .section-title {
+    @apply text-3xl lg:text-[40px] font-[500] text-[#3D3D3D];
+  }
+  .section-subtitle {
+    @apply text-[16px] lg:text-[20px] text-[#757575] max-w-[800px] mx-auto;
+  }
+}
 body {
   background: var(--background);
   color: var(--foreground);
@@ -214,11 +226,15 @@ body {
   background-color: #d8e3ef !important;
 }
 
-
 .scrollbar-hide::-webkit-scrollbar {
   display: none !important;
 }
 .scrollbar-hide {
-  -ms-overflow-style: none !important;  /* IE and Edge */
-  scrollbar-width: none !important;  /* Firefox */
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+.whitePlaceholder .ant-input::placeholder {
+  color: white !important;
+  opacity: 0.6 !important;
+  
 }
